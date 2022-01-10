@@ -1,0 +1,85 @@
+/* services styles */
+#services {
+	padding: 80px 0;
+}
+
+.service {
+	width: 255px;
+	text-align: center;
+	color: #555555;
+}
+
+.service__icon {
+	background: url("../images/services_sprites.png");
+	height: 58px;
+	margin: 0 auto;
+}
+
+.service__web .service__icon {
+	width: 48px;
+	background-position: -78px -10px;
+}
+
+.service__web:hover .service__icon {
+	background-position: -10px -10px;
+}
+
+.service__dev .service__icon {
+	width: 44px;
+	background-position: -74px -142px;
+}
+
+.service__dev:hover .service__icon {
+	background-position: -10px -142px;
+}
+
+.service__cust .service__icon {
+	width: 44px;
+	background-position: -10px -78px;
+}
+
+.service__cust:hover .service__icon {
+	background-position: -74px -78px;
+}
+
+.service__market .service__icon {
+	width: 52px;
+	background: url("../images/services_market_sprites.png") -82px -66px;
+}
+
+.service__market:hover .service__icon {
+	background-position: -10px -10px;
+}
+
+.service__title {
+	margin-top: 30px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.service__subtitle {
+	font-size: 14px;
+	margin: 20px 0 28px;
+}
+
+.service__line {
+	width: 70px;
+	height: 3px;
+	background-color: rgb(241, 238, 233);
+	margin: 0 auto;
+}
+
+.service:hover .service__title {
+	color: #c7b299;
+}
+
+.service:hover .service__line {
+	background-color: #c7b299;
+}
+
+.services__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 34px;
+}

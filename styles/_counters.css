@@ -1,0 +1,50 @@
+#counters {
+	padding: 70px 0;
+	color: white;
+	background-image: -moz-linear-gradient(
+		0deg,
+		rgb(33, 27, 25) 0%,
+		rgb(78, 52, 39) 100%
+	);
+	background-image: -webkit-linear-gradient(
+		0deg,
+		rgb(33, 27, 25) 0%,
+		rgb(78, 52, 39) 100%
+	);
+	background-image: -ms-linear-gradient(
+		0deg,
+		rgb(33, 27, 25) 0%,
+		rgb(78, 52, 39) 100%
+	);
+	text-align: center;
+}
+
+.counters__inner {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.counter-item {
+	width: 160px;
+	margin-bottom: 20px;
+}
+
+.counter-item__title {
+	font-size: 48px;
+	font-family: "Montserrat", sans-serif;
+	margin: 28px 0 20px;
+}
+
+.counter-item__subtitle {
+	font-size: 14px;
+	margin-bottom: 28px;
+	color: #c7b299;
+}
+
+.counter-item__line {
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	margin: 0 auto;
+}

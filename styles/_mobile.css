@@ -1,0 +1,58 @@
+#mobile {
+	padding-top: 80px;
+	background-color: #fbfaf8;
+}
+
+.mobile__inner {
+	display: flex;
+	align-items: center;
+}
+
+.mobile__left {
+	width: 65%;
+	margin-left: 20px;
+}
+
+.mobile__list {
+	list-style: none;
+	margin-top: 70px;
+	padding-left: 100px;
+}
+
+.mobile__list li {
+	position: relative;
+	font-size: 16px;
+	font-weight: bold;
+	color: #8c8c8c;
+	margin-bottom: 13px;
+}
+
+.mobile__list li::before {
+	content: url("../images/listArrow.png");
+	position: absolute;
+	left: -50px;
+	top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.mobile__right {
+		display: none;
+	}
+
+	.mobile__left {
+		width: 100%;
+		padding: 0;
+	}
+
+	.mobile__left.title,
+	.mobile__left.subtitle {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.mobile__list {
+		margin: 0;
+		padding-left: 50px;
+	}
+}

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Raleway:wght@400;600&display=swap");
+
+:root {
+	--main-transition: 0.3s linear;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+/* common styles */
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	transition: var(--main-transition);
+}
+
+button {
+	border: none;
+	border-radius: 3px;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.container {
+	width: 100%;
+	max-width: 1180px;
+	padding: 0 10px;
+}
+
+.brown-btn,
+.gray-transparent-btn:hover {
+	border: 1px solid #998675;
+	background-color: #998675;
+	color: #fff;
+	transition: var(--main-transition);
+}
+
+.brown-btn:hover {
+	background: transparent;
+	border: 1px solid #998675;
+}
+
+.gray-transparent-btn {
+	border: 1px solid rgb(235, 235, 235);
+	background-color: transparent;
+	color: rgb(140, 140, 140);
+	transition: var(--main-transition);
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	color: #555555;
+	margin-bottom: 30px;
+}
+
+.subtitle {
+	font-size: 16px;
+	color: #8c8c8c;
+	margin-bottom: 35px;
+}
+
+/* realization styles */
+
+#realization {
+	padding-top: 80px;
+	text-align: center;
+	background: #fbfaf8;
+}
+
+#realization img {
+	width: 80%;
+}
+
+/* modal styles */
+
+#modal {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__inner {
+	position: relative;
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.modal__inner iframe {
+		width: 100%;
+	}
+}
+
+.close-btn {
+	background: transparent;
+}
+
+.close-btn::after {
+	position: absolute;
+	top: -70px;
+	right: 0;
+	content: "\00d7";
+	color: #fff;
+	font-size: 48px;
+}
+
+/* partners */
+#partners {
+	background: url("../images/partners-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 130px 0;
+}
+
+.partners__inner {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.partners__img {
+	width: 210px;
+	margin: 20px;
+}
+
+/* copyright */
+
+#copyright {
+	padding: 40px 0;
+	background-color: #111111;
+}

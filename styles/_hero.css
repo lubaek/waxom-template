@@ -1,0 +1,137 @@
+/* hero styles */
+#hero {
+	height: 100vh;
+	background: url("../images/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
+}
+
+.hero__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo a {
+	font-size: 34px;
+	color: #fff;
+}
+
+.nav-actions {
+	display: flex;
+	gap: 28px;
+	margin-left: 60px;
+}
+.nav-actions button {
+	background: transparent;
+	border: none;
+}
+
+/* navbar */
+
+.navbar__links {
+	display: flex;
+	gap: 28px;
+	margin: 0;
+}
+
+.navbar__links a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.navbar__links a:hover {
+	color: #c7b299;
+}
+
+/* slider */
+.slider {
+	height: 80%;
+	position: relative;
+}
+
+.slider__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-slider {
+	height: 100%;
+	position: absolute;
+}
+
+.owl-stage-outer {
+	height: 100%;
+}
+
+.owl-carousel .item {
+	height: 80vh;
+	padding: 1rem;
+	text-align: center;
+}
+
+.customNextBtn {
+	background: url("../images/rightArrow.png") center no-repeat;
+	right: 35px;
+}
+
+.customPreviousBtn {
+	background: url("../images/leftArrow.png") center no-repeat;
+	left: 35px;
+}
+
+.customNextBtn,
+.customPreviousBtn {
+	height: 70px;
+	width: 43px;
+	top: calc(50% - 35px);
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+}
+
+/* slider item */
+
+.slider-item__title {
+	font-size: 36px;
+}
+
+.slider-item__title__bold {
+	font-weight: 600;
+	font-size: 52px;
+}
+
+.slider-item__subtitle {
+	font-size: 16px;
+	margin-bottom: 54px;
+}
+
+.slider-item__btn {
+	padding: 16px 30px;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar,
+	.slider-btns {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.slider-item__title {
+		font-size: 24px;
+	}
+	.slider-item__title__bold {
+		font-size: 32px;
+	}
+}
